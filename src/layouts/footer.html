@@ -1,0 +1,48 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer_top">
+        <include
+          src="./components/footerList.html"
+          locals='{
+                      "title": "COMPANY",
+                      "list":"[`News`,`Blog`,`Testimonials`,`About Us`,`Press Kit`,`Get in Touch`,]"
+                  }'
+        ></include>
+
+        <include
+          src="./components/footerList.html"
+          locals='{
+                "title": "PRODUCTS",
+                "list":"[`UI Kits`, `Icons`,`Wordpress Themes`,`Mock-Ups`,]"
+            }'
+        ></include>
+        <include
+          src="./components/footerList.html"
+          locals='{
+                "title": "SUPPORT",
+                "list":"[`Community`, `Forum`,`Distributors`,`Privacy Policy`,`Term of Use`,]"
+            }'
+        ></include>
+        <include
+          src="./components/footerList.html"
+          locals='{
+                "title": "CUSTOMERS",
+                "list":"[`Documentation`,`Tools`,`Downloads`,`Developer Center`]"
+            }'
+        ></include>
+    </div>
+    <div class="footer_bottom">
+      <div class="footer_bottom_copyright">
+        <p>© 2016 Hofmann UI Kit</p>
+        <p>Created by Goldenfox — okodesign.net</p>
+      </div>
+      <div class="footer_bottom_social">
+        <a class="footer_icon"><img src="../assets/icons/linkedin.svg" /></a>
+        <a class="footer_icon"><img src="../assets/icons/google-plus.svg"/></a>
+        <a class="footer_icon"><img src="../assets/icons/twitter.svg" /></a>
+        <a class="footer_icon"><img src="../assets/icons/facebook.svg" /></a>
+        <a class="footer_icon"><img src="../assets/icons/instagram.svg"/></a>
+      </div>
+    </div>
+  </div>
+</footer>
