@@ -1,0 +1,15 @@
+@use "functions" as *;
+
+// Font family
+$primary-font: Roboto;
+
+// Breakpoints
+$mobile: 321px;
+$desktop: 1440px ;
+$tablet: 768px ;
+
+// Colors
+$primary-color: #ebcb80;
+$background-color: #ffffff;
+$text-color: #4b4b4b;
+$main-spacing: pxToRem(-0.58);
