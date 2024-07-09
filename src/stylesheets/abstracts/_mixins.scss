@@ -36,3 +36,13 @@
     flex-wrap: $wrap;
   }
 }
+
+
+//Background image
+@mixin background-img($bg: "") {
+  background-image: url($bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
