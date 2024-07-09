@@ -69,29 +69,6 @@
     max-height: 17px;
   }
 
-  &-info {
-    &_list {
-      @include flex($align: center, $justify: center);
-    }
-
-    &_item {
-      margin-left: 1rem;
-
-      @include tablet {
-        margin-left: 1.5rem;
-      }
-
-      @include mobile {
-        margin-left: pxToRem(10);
-      }
-    }
-  }
-
-  &_icon {
-    max-width: 12px;
-    max-height: 17px;
-  }
-
   
 }
 
@@ -99,10 +76,9 @@
   margin: 0 auto;
   @include mobile {
     padding: 0 15px;
+    
   }
 }
-
-
 
 .btn {
   padding: 15px 54px;
@@ -131,3 +107,6 @@
     padding-bottom: 7px;
   }
 }
+
+
+  
