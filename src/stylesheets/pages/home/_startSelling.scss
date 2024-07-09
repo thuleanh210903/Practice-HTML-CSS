@@ -1,0 +1,55 @@
+@use "../../abstracts/" as *;
+
+.start-selling {
+  background-color: $primary-color;
+  width: 100%;
+  padding: 60px 0px;
+  gap: 30px;
+  text-align: center;
+
+  @include flex($direction: column, $align: center);
+
+  &_title {
+    line-height: 48px;
+    font-size: pxToRem(44);
+  }
+  &_sub {
+    color: $text-color;
+    max-width: pxToRem(260);
+    padding-bottom: 15px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  &_form {
+    @include flex($direction: column);
+    max-width: pxToRem(230);
+  }
+
+  &_input {
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    max-height: pxToRem(45);
+    border: none;
+    padding: 16px 34px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease; 
+
+    &::placeholder {
+      color: $text-color;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &_btn {
+    width: 100%;
+    border: none;
+    background-color: $text-color;
+    color: $background-color;
+    padding: 16px 59px;
+    border-radius: 26px;
+  }
+}
