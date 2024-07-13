@@ -1,6 +1,60 @@
 <header class="header_main">
   <div class="container">
     <include src="./components/nav.html" ></include>
-     
+    <div class="header_main_hero">
+      <div class="header_main_content">
+        <p class="header_main_text">RESPONSIVE UI KIT</p>
+        <h1 class="header_main_title">HOFMANN</h1>
+        <p class="header_main_sub">We’re Bring It To The New Level</p>
+        <p class="header_main_desc">
+          Every new computer that’s brought home from the store has an operating
+          system installed onto it. But what most new computer users don’t
+          realize, is that without an operating system, that computer would be a
+          simple shell of possibilities.
+        </p>
+        <div class="header_main_download">
+          <a href="" class="header_main_image">
+            <img
+              src="../assets/images/desktop/appstore-badge.png"
+              class="img-main header_main_store"
+              alt="appstore"
+            />
+          </a>
+          <a href="" class="header_main_image">
+            <img
+              src="../assets/images/desktop/google-play-badge.png"
+              class="img-main header_main_store"
+              alt="google"
+            />
+          </a>
+        </div>
+      </div>
+      <figure class="header_main_images">
+        <picture>
+          <source
+            media="(max-width:767px)"
+            srcset="../assets/images/mobile/iPhone.png"
+            class="img-main"
+          />
+          <img
+            src="../assets/images/desktop/iphone.png"
+            class="img-main"
+          />
+        </picture>
+        <figure class="header_main_phone">
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="../assets/images/mobile/iPhone-screen.png"
+              class="img-main"
+            />
+            <img
+              src="../assets/images/desktop/iphone-screen.png"
+              class="img-main header_main_screen"
+            />
+          </picture>
+        </figure>
+      </figure>
+    </div>
   </div>
 </header>
