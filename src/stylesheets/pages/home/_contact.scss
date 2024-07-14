@@ -68,15 +68,12 @@
     max-width: 12px;
     max-height: 17px;
   }
-
-  
 }
 
 .container-contact {
   margin: 0 auto;
   @include mobile {
     padding: 0 15px;
-    
   }
 }
 
@@ -107,6 +104,3 @@
     padding-bottom: 7px;
   }
 }
-
-
-  
