@@ -44,6 +44,10 @@
     span {
       font-size: pxToRem(18);
     }
+
+    @include tablet {
+      font-size: pxToRem(12);
+    }
   }
 
   &_link {
