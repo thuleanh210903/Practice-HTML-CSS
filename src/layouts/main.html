@@ -243,15 +243,23 @@
 
   <!-- Get In touch -->
   <section class="contact">
-    <div class="contact-content">
-      <h2 class="contact-content_title">Get in touch</h2>
-
-      <form class="contact-content_form">
-        <input type="text" value="Name*" required class="form_input" />
-        <input type="email" value="Email*" required class="form_input" />
-        <textarea
+    <div class="container">
+      <h2 class="title">Get in Touch</h2>
+      <form action="#" class="contact_form">
+        <input
           type="text"
-          class="form_input"
+          class="input-main contact_form_input"
+          placeholder="Name*"
+          required
+        />
+        <input
+          type="email"
+          class="input-main contact_form_input"
+          placeholder="Email*"
+          required
+        />
+        <textarea
+          class="input-main contact_form_input"
           rows="5"
           cols="30"
           placeholder="Message"
@@ -293,34 +301,40 @@
           >
         </div>
         <input type="text" value="SUBMIT" required class="form_btn" />
+        <input
+          type="submit"
+          value="SUBMIT"
+          class="btn"
+        />
       </form>
 
-      <div class="contact-content_info">
-        <div class="info-list">
+      <!-- Start of contact info -->
+      <div class="contact_info">
+        <div class="contact-info_list">
           <img
             src="../assets/icons/location.svg"
+            class="contact_icon"
             alt="location"
-            class="info-list_icon"
           />
-          <p class="info-list_des">
+          <p class="contact-info_item">
             2300 W Arbutus Dr Citrus Springs, FL 34434, USA
           </p>
         </div>
-        <div class="info-list">
+        <div class="contact-info_list">
           <img
             src="../assets/icons/mail.svg"
-            alt="location"
-            class="info-list_icon"
+            class="contact_icon"
+            alt="mail"
           />
-          <p class="info-list_des">contact@hofmannui.net</p>
+          <p class="contact-info_item">contact@hofmannui.net</p>
         </div>
-        <div class="info-list">
+        <div class="contact-info_list">
           <img
             src="../assets/icons/phone.svg"
-            alt="location"
-            class="info-list_icon"
+            class="contact_icon"
+            alt="phone"
           />
-          <p class="info-list_des">952-775-6021</p>
+          <p class="contact-info_item">952-775-6021</p>
         </div>
       </div>
     </div>
