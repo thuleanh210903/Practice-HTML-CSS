@@ -1,0 +1,62 @@
+@use "../abstracts/" as *;
+.input-main {
+    font-size: pxToRem(14);
+    padding: 13px 25px;
+    background-color: $background-color;
+    outline: none;
+    border-radius: pxToRem(3);
+    border: none;
+    width: 100%;
+    font-family: $primary-font;
+  }
+  .form-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &_checkmark {
+      position: absolute;
+      top: 0;
+      left: calc(50% - pxToRem(110));
+      height: 18px;
+      width: 18px;
+      border-radius: 3px;
+      background-color: $background-color;
+  
+      @include tablet {
+        left: calc(50% - 4.875rem);
+      }
+    }
+  }
+  .form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .form-checkbox input:checked ~ .form-checkbox_checkmark {
+    background-color: $primary-color;
+  }
+  .form-checkbox_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .form-checkbox input:checked ~ .form-checkbox_checkmark:after {
+    display: block;
+  }
+  .form-checkbox .form-checkbox_checkmark:after {
+    left: 6px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid $background-color;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
