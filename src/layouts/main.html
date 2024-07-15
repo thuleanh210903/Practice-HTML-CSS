@@ -97,5 +97,60 @@
       <input type="email" class="start-selling_input" placeholder="Email" />
       <input type="submit" class="start-selling_btn" value="REGISTER" />
     </form>
+  <!-- Products -->
+  <section class="products">
+    <div class="container-products">
+      <h2 class="products-title">Recent Products</h2>
+      <p class="products-desc">
+        Having used discount toner cartridges for twenty years, there have been
+        a lot of changes in the toner cartridge market. The market today is
+        approximately a twenty billion dollar business.
+      </p>
+      <div class="products-cards">
+        <include
+          src="./components/product-card.html"
+          locals='{
+                    "productImage": "../assets/images/desktop/products-1.png",
+                    "productView": "91312",
+                    "productTitle":"APP MAINTENANCE",
+                    "productDesc":"Lida Morrison, Nettie Burke"
+                  }'
+        >
+        </include>
+
+        <include
+          src="./components/product-card.html"
+          locals='{
+                    "productImage": "../assets/images/desktop/products-2.png",
+                    "productView": "91312",
+                    "productTitle":"FTA KEYS",
+                    "productDesc":"Ivan Alexander, Steven Soto, Clifford Hammond"
+                  }'
+        >
+        </include>
+
+        <include
+          src="./components/product-card.html"
+          locals='{
+                    "productImage": "../assets/images/desktop/products-3.png",
+                    "productView": "91312",
+                    "productTitle":"SMART WATCH",
+                    "productDesc":"Trevor James, Carl Stevenson"
+                  }'
+        >
+        </include>
+
+        <include
+          src="./components/product-card.html"
+          locals='{
+                    "productImage": "../assets/images/desktop/products-4.png",
+                    "productView": "91312",
+                    "productTitle":"WATCH APPS",
+                    "productDesc":"Glen Snyder, Andrew Goodwin, Lida Morrison "
+                  }'
+        >
+        </include>
+      </div>
+    </div>
   </section>
 </main>
