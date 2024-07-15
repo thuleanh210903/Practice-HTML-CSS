@@ -1,0 +1,113 @@
+@use "../abstracts/" as *;
+
+.product-card {
+  @include flex($direction: column, $justify: space-between);
+  &_image {
+    margin: 0 auto 30px;
+    max-width: 262px;
+    max-height: 262px;
+    position: relative;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include tablet {
+      max-width: 160px;
+      max-height: 160px;
+    }
+
+    @include mobile {
+      max-width: 120px;
+      max-height: 120px;
+    }
+
+  }
+  &_eye {
+    max-width: 40px;
+    max-height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    &-small {
+      max-width: 20px;
+      max-height: 11px;
+      margin-right: 6px;
+    }
+  }
+
+  &_details {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    display: none;
+
+    @include tablet {
+      bottom: 30px;
+    }
+    @include mobile {
+      bottom: 15px;
+    }
+  }
+
+  &_view {
+    color: $background-color;
+  }
+
+  &_btn {
+    max-width: 200px;
+    border: 2px solid $text-color;
+    color: $text-color;
+    margin: 32px auto 0;
+    padding: 9px 64px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2rem;
+  }
+
+  &_content {
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-height: 80px;
+  }
+
+  &_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border-radius: 2px solid $primary-color;
+      background-color: rgba(209, 180, 113, 0.233);
+      display: none;
+  }
+
+  &:hover {
+
+    .product-card {
+        &_eye {
+            display: block;
+        }
+
+        &_details {
+            display: block;
+        }
+
+        &_bg {
+            display: block;
+        }
+    }
+    .product-card_btn {
+      border: 2px solid $primary-color;
+      background-color: $primary-color;
+    }
+  }
+}
