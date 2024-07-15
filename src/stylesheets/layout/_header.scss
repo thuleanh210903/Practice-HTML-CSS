@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use "../abstracts/" as *;
 
 .header_main {
   width: 100%;
@@ -6,5 +6,153 @@
 
   @include flex($direction: column);
 
+  &_hero {
+    background-color: inherit;
+    width: 85%;
+    margin: 70px auto 0;
+
+    @include flex($justify: space-between);
+
+    @include tablet {
+      width: 100%;
+      padding: 0 95px 0 80px;
+    }
+
+    @include mobile {
+      @include flex($direction: column, $align: center);
+      padding: 0 25px;
+      position: relative;
+      margin: 44px auto 65px;
+    }
+  }
+
+  &_content {
+    max-width: 50%;
+    color: $background-color;
+    margin-bottom: 60px;
+    @include mobile {
+      max-width: 100%;
+    }
+    @include tablet {
+      margin-bottom: 35px;
+    }
+  }
+
+  &_title {
+    color: $primary-color;
+    padding: 120px 14px 0;
+
+    @include tablet {
+      padding: 59px 10px 0;
+    }
+
+    @include mobile {
+      padding: 15px 10px 0;
+    }
+  }
+
+  &_sub {
+    font-size: pxToRem(24);
+    line-height: pxToRem(36);
+    padding-top: 30px;
+    @include tablet {
+      font-size: pxToRem(12);
+      line-height: 1rem;
+      padding-top: 11px;
+    }
+  }
+
+  &_desc {
+    padding-top: 20px;
+    @include tablet {
+      padding-top: 16px;
+    }
+  }
+
+  &_download {
+    margin-top: 100px;
+    display: flex;
+    margin-left: -30px;
+
+    @include tablet {
+      margin-top: 38px;
+    }
+
+    @include mobile {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &_images {
+    padding-top: 56px;
+    margin: auto 50px 0;
+    position: relative;
+    width: 358px;
+
+    @include tablet {
+      width: 220px;
+    }
+
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+
+  &_phone {
+    position: absolute;
+    margin: 0 22px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: unset;
+
+    @include tablet {
+      margin: 0 13px;
+    }
+
+    @include mobile {
+      margin: 5px 27px;
+    }
+  }
+
+  &_screen {
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &_image {
+    margin-left: 30px;
+    width: 135px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid $text-color;
+
+    &:hover {
+      border: 1px solid $background-color;
+    }
+
+    @include tablet {
+      width: 71px;
+      height: 21px;
+    }
+  }
+
+  &_store {
+    height: 100%;
+  }
 }
+
+.img-main {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
 

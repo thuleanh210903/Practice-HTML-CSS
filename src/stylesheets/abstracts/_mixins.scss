@@ -37,12 +37,9 @@
   }
 }
 
-
-// background image
-
-@mixin background-img ($bg: "") {
+@mixin background-img($bg: "") {
   background-image: url($bg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
