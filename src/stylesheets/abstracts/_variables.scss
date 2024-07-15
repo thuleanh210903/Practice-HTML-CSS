@@ -4,9 +4,10 @@
 $primary-font: Roboto;
 
 // Breakpoints
-$mobile: 321px;
-$desktop: 1440px ;
-$tablet: 768px ;
+$medium: 768px;
+$extra-large: 1200px;
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-large - 1px);
 
 // Colors
 $primary-color: #ebcb80;

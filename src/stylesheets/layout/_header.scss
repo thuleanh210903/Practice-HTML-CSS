@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.header_main {
+  width: 100%;
+  @include background-img("../assets/images/desktop/background-header.png");
+
+  @include flex($direction: column);
+
+}
+

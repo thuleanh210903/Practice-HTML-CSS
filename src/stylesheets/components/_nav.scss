@@ -1,0 +1,86 @@
+
+@use "../abstracts/" as *;
+.menu {
+  @include flex($justify: space-between);
+
+  nav {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+    &_item {
+      padding-left: 40px;
+      a {
+        font-size: pxToRem(18);
+        color: $background-color;
+      }
+
+      a:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &_action {
+    @include flex($justify: space-between);
+    @include tablet {
+      display: none;
+    }
+    &_search {
+      cursor: pointer;
+    }
+  }
+
+  &_language {
+    margin-left: 20px;
+    position: relative;
+
+    &_select {
+      background-color: inherit;
+      color: $background-color;
+      border: 2px solid $background-color;
+      border-radius: 16px;
+      cursor: pointer;
+      padding: 6px 30px 7px 14px;
+      appearance: none;
+      background-image: url("/src/assets/icons/triangle-icon.svg");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem top 50%;
+      background-size: -0.35rem;
+
+      option {
+        background-color: $text-color;
+        color: $background-color;
+      }
+    }
+  }
+}
+.header_main_navigation {
+  padding-top: 25px;
+  width: 100%;
+
+  @include flex($direction: row, $justify: space-around);
+  @include tablet {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  @include mobile {
+    margin-left: -15px;
+    padding: 16px;
+  }
+
+  &_logo {
+    font-size: pxToRem(36);
+    color: $primary-color;
+    @include tablet {
+      display: none;
+    }
+  }
+}
