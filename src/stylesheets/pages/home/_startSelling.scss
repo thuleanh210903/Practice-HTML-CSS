@@ -2,16 +2,24 @@
 
 .start-selling {
   background-color: $primary-color;
-  width: 100%;
-  padding: 60px 0px;
+  padding: 80px 0px 80px;
   gap: 30px;
   text-align: center;
 
   @include flex($direction: column, $align: center);
 
+  @include mobile {
+    gap: unset;
+  }
+
   &_title {
     line-height: 48px;
     font-size: pxToRem(44);
+
+    @include mobile {
+      font-size: pxToRem(20);
+      line-height: 40px;
+    }
   }
   &_sub {
     color: $text-color;
@@ -19,11 +27,16 @@
     padding-bottom: 15px;
     line-height: 24px;
     font-size: 16px;
+
+    @include mobile {
+      font-size: 11px;
+    }
   }
 
   &_form {
     @include flex($direction: column);
     max-width: pxToRem(230);
+    margin: 0 auto;
   }
 
   &_input {
