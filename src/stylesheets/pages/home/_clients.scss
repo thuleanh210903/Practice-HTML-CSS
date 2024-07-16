@@ -1,33 +1,58 @@
 @use "../../abstracts/" as *;
 
 .container {
-    width: 100%;
-    @include background-img(
+  width: 100%;
+  @include background-img(
     "../assets/images/desktop/background-client-saying.png"
   );
 }
 .clients {
   color: $background-color;
   text-align: center;
-  padding: 90px 0 73px;
+  padding: 80px 0 73px;
   max-width: 1140px;
   margin: 0 auto;
   @include tablet {
-    padding: 40px 30px;
+    padding: 40px 80px;
   }
   @include mobile {
     padding: 30px 12px;
   }
 
+  &-head {
+    position: relative;
+    span {
+      left: 48%;
+      font-size: 144px;
+      color: $primary-color;
+      position: absolute;
+      top: 200%;
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile {
+        top: 71px;
+        font-size: 64px;
+        position: absolute;
+        left: 48%;
+        display: block;
+      }
+    
+    }
+  }
+
   &-title {
     font-size: pxToRem(44);
-
+    z-index: 1;
+    position: relative;
     @include tablet {
-        font-size: pxToRem(32);
+      font-size: pxToRem(32);
     }
 
     @include mobile {
-        font-size: pxToRem(20);
+      font-size: pxToRem(20);
     }
   }
 
@@ -36,11 +61,11 @@
     margin: 110px 0 53px;
 
     @include tablet {
-        margin: 80px 0 30px;
+      margin: 80px 10px 30px;
     }
 
     @include mobile {
-        margin: 50px 0 30px;
+      margin: 50px 10px 30px;
     }
 
     &_icon {
@@ -63,19 +88,19 @@
     }
 
     &_content {
-        width: 66%;
-        line-height: pxToRem(36);
-        font-size: pxToRem(24);
-        text-align: left;
-  
-        @include tablet {
-          font-size: pxToRem(12);
-          line-height: pxToRem(16);
-        }
-  
-        @include mobile {
-          width: 100%;
-        }
+      width: 66%;
+      line-height: pxToRem(36);
+      font-size: pxToRem(24);
+      text-align: left;
+
+      @include tablet {
+        font-size: pxToRem(12);
+        line-height: pxToRem(16);
+      }
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 
@@ -83,27 +108,27 @@
     @include flex($justify: center);
 
     &_contact {
-        width: auto;
-        margin-left: 30px;
+      width: auto;
+      margin-left: 30px;
 
-        @include tablet {
-            margin-left: 16px;
-          }
+      @include tablet {
+        margin-left: 16px;
+      }
     }
   }
 }
 
 .img-person {
-    max-width: 72px;
-    max-height: 72px;
+  max-width: 72px;
+  max-height: 72px;
 
-    @include tablet {
-        max-width: 48px;
-        max-height: 48px;
-    }
+  @include tablet {
+    max-width: 48px;
+    max-height: 48px;
+  }
 }
 
 .person-name {
-    color: $primary-color;
-    padding-bottom: 5px;
+  color: $primary-color;
+  padding-bottom: 5px;
 }
