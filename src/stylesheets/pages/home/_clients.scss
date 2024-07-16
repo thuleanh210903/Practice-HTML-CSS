@@ -14,7 +14,7 @@
   max-width: 80%;
   margin: 0 auto;
   @include tablet {
-    padding: 40px 80px;
+    padding: 40px 0;
   }
   @include mobile {
     padding: 30px 0;
