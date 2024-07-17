@@ -1,0 +1,44 @@
+@use "../../abstracts/" as *;
+
+.plans {
+  padding: 68px 0 116px;
+  text-align: center;
+
+  @include tablet {
+    padding: 56px 0 74px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    padding: 36px 15px 48px;
+  }
+
+  &-container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  &_title {
+    font-size: 44px;
+
+    @include tablet {
+      font-size: 33px;
+    }
+  }
+}
+
+.plans-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  gap: 25px;
+
+  @include tablet {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+<main>
+  <!-- Subcribing plans -->
+  <section class="plans-container">
+    <div class="plans">
+      <h2 class="plans_title">Subscribing Plans</h2>
+      <div class="plans-cards">
+        <include
+          src="./components/plans-card.html"
+          locals='{
+                  "planImage": "../assets/images/desktop/plan-1.png",
+                  "planTitle": "FREEMIUM",
+                  "planDesc": "[`Basic Collections`,`10 Messages`,`50 Images per Day`]",
+                  "planPrice": "0"
+              }'
+        >
+        </include>
+  
+        <include
+          src="./components/plans-card.html"
+          locals='{
+                  "planImage": "../assets/images/desktop/plan-2.png",
+                  "planTitle": "START UP",
+                  "planDesc": "[`Multiple Collections`,`100 Messages`,`100 Images per Day`]",
+                  "planPrice": "9"
+              }'
+        >
+        </include>
+  
+        <include
+          src="./components/plans-card.html"
+          locals='{
+                  "planImage": "../assets/images/desktop/plan-3.png",
+                  "planTitle": "BUSINESS",
+                  "planDesc": "[`Unlimited Collections`,`500 Messages`,`300 Images per Day`,`Project Reviews`]",
+                  "planPrice": "29"
+              }'
+        >
+        </include>
+  
+        <include
+          src="./components/plans-card.html"
+          locals='{
+                  "planImage": "../assets/images/desktop/plan-4.png",
+                  "planTitle": "ENTERPRISE",
+                  "planDesc": "[`Unlimited Collections`,`Unlimited Messages`,`Unlimited Images per Day`,`Project Reviews`]",
+                  "planPrice": "49"
+              }'
+        >
+        </include>
+      </div>
+    </div>
+    
+  </section>
+</main>
