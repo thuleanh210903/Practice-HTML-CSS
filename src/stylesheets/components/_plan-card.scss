@@ -17,6 +17,8 @@
       0 6px 6px rgba(143, 142, 142, 0.664);
   }
 
+  @include flex($direction: column, $justify: space-between);
+
   &_top {
     position: relative;
     border-radius: inherit;
