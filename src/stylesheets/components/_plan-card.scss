@@ -25,6 +25,9 @@
 
   }
 
+
+  @include flex($direction: column, $justify: space-between);
+
   &_top {
     position: relative;
     border-radius: inherit;
