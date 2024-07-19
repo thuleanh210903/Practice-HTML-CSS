@@ -46,7 +46,7 @@
     border: none;
     padding: 16px 34px;
     margin-bottom: 40px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 
     &::placeholder {
       color: $text-color;
@@ -64,5 +64,16 @@
     color: $background-color;
     padding: 16px 59px;
     border-radius: 26px;
+
+    font-size: pxToRem(16);
+
+    @include tablet {
+      font-size: 11px;
+    }
+
+    &:hover {
+      background-color: $background-color;
+      color: $text-color;
+    }
   }
 }
