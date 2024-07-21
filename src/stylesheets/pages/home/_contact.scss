@@ -77,6 +77,12 @@
   }
 }
 
+.container-contact {
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+
 .btn {
   padding: 15px 54px;
   text-align: center;
