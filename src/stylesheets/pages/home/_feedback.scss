@@ -68,21 +68,22 @@
     }
 
     &_quotation {
-      font-size: 4rem;
-      padding: 33px 0 80px;
+      font-size: 64px;
+      padding: 33px 0 30px;
       transform: rotate(180deg);
       @include flex($justify: center);
       @include tablet {
-        padding: 30px 0 60px;
+        padding: 30px 0 30px;
       }
     }
 
     &_content {
       font-size: 1.125rem;
-      padding: 20px 0 20px;
+      padding: 20px 0 30px;
       @include tablet {
         font-size: pxToRem(11);
         line-height: 1rem;
+
       }
     }
     &_name {
@@ -92,6 +93,10 @@
       @include tablet {
         font-size: pxToRem(18);
         line-height: pxToRem(21);
+      }
+
+      &--secondary {
+        color: $primary-color;
       }
     }
 
@@ -135,8 +140,8 @@
   }
 
   &-dot {
-    max-width: 14px;
-    max-height: 14px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border: 1px solid $text-color;
     cursor: pointer;
