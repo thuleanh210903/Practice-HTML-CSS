@@ -72,6 +72,12 @@
   
 }
 
+.container-contact {
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+
 .btn {
   padding: 15px 54px;
   text-align: center;
@@ -95,7 +101,7 @@
   }
 
   @include mobile {
-    font-size: pxToRem(20);
+    font-size: pxToRem(31);
     padding-bottom: 7px;
   }
 }
