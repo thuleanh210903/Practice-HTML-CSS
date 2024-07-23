@@ -1,59 +1,101 @@
 <main>
-    <!-- What client saying -->
-    <section class="container container-clients">
-      <div class="clients">
-        <div class="clients-head">
-          <p class="clients-title">What Clients are saying</p>
-          <span class="clients-quotation">“</span>
+  <!-- Stunning result -->
+  <section class="result">
+    <h3 class="result-title">Stunning Results</h3>
+    <p>Just look to the statistics we have generate the past year.</p>
+
+    <div class="result-cards">
+      <include
+        src="./components/result-card.html"
+        locals='{
+        "resultImage": "../assets/images/desktop/circle-1.png",
+        "resultPercent": "74",
+        "resultSup": "98",
+        "resultTitle": "TOTAL CONVERSION",
+        "resultDesc": "The past few years have seen a dramatic change in the public perception of cosmetic surgery."
+      }'
+      >
+      </include>
+
+      <include
+        src="./components/result-card.html"
+        locals='{
+        "resultImage": "../assets/images/desktop/circle-2.png",
+        "resultPercent": "39",
+        "resultSup": "75",
+        "resultTitle": "FREE DOWNOADS",
+        "resultDesc": "Can you imagine what we will be downloading in another twenty years?"
+      }'
+      >
+      </include>
+
+      <include
+        src="./components/result-card.html"
+        locals='{
+        "resultImage": "../assets/images/desktop/circle-3.png",
+        "resultPercent": "81",
+        "resultSup": "15",
+        "resultTitle": "UNIQUE VISITORS",
+        "resultDesc": "WordPress, the premier free open-source blogging utility, has gone through several upgrades in its life."
+      }'
+      >
+      </include>
+    </div>
+  </section>
+  <!-- What client saying -->
+  <section class="container container-clients">
+    <div class="clients">
+      <div class="clients-head">
+        <p class="clients-title">What Clients are saying</p>
+        <span class="clients-quotation">“</span>
+      </div>
+
+      <div class="clients-slider">
+        <div class="clients-slider_icon">
+          <img
+            src="../assets/icons/prev-icon.svg"
+            alt="prev"
+            class="img-slider"
+          />
         </div>
-  
-        <div class="clients-slider">
-          <div class="clients-slider_icon">
-            <img
-              src="../assets/icons/prev-icon.svg"
-              alt="prev"
-              class="img-slider"
-            />
-          </div>
-  
-          <p class="clients-slider_content">
-            Businesses at present had creatively generated effective advertising
-            campaigns in the form of audio visual media that includes the
-            television and radios and the print media that cover the newspaper and
-            campaign materials like the posters, brochures, business cards, flyers
-            and many more.
-          </p>
-  
-          <div class="clients-slider_icon">
-            <img
-              src="../assets/icons/next-icon.svg"
-              alt="next"
-              class="img-slider"
-            />
-          </div>
-        </div>
-  
-        <div class="clients-person">
-          <img src="../assets/images/desktop/person.png" class="img-person" />
-          <div class="clients-person_contact">
-            <p class="person-name">Ophelia Holland</p>
-            <p>@ophelia_holland</p>
-          </div>
+
+        <p class="clients-slider_content">
+          Businesses at present had creatively generated effective advertising
+          campaigns in the form of audio visual media that includes the
+          television and radios and the print media that cover the newspaper and
+          campaign materials like the posters, brochures, business cards, flyers
+          and many more.
+        </p>
+
+        <div class="clients-slider_icon">
+          <img
+            src="../assets/icons/next-icon.svg"
+            alt="next"
+            class="img-slider"
+          />
         </div>
       </div>
-    </section>
-    <!-- Start Selling Instantly -->
-     <section class="start-selling">
-        <h2 class="start-selling_title">Start Selling Instantly</h2>
-        <p class="start-selling_sub">Start Selling With Your Pre-paid account. No deposit needed.</p>
 
-        <form class="start-selling_form">
-            <input 
-            type="email"
-            class="start-selling_input"
-            placeholder="Email"
-            />
-            <input type="submit" class="start-selling_btn" value="REGISTER"/>
-        </form>
-     </section>
+      <div class="clients-person">
+        <img src="../assets/images/desktop/person.png" class="img-person" />
+        <div class="clients-person_contact">
+          <p class="person-name">Ophelia Holland</p>
+          <p>@ophelia_holland</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Selling Instantly -->
+  <section class="start-selling">
+    <h2 class="start-selling_title">Start Selling Instantly</h2>
+    <p class="start-selling_sub">
+      Start Selling With Your Pre-paid account. No deposit needed.
+    </p>
+
+    <form class="start-selling_form">
+      <input type="email" class="start-selling_input" placeholder="Email" />
+      <input type="submit" class="start-selling_btn" value="REGISTER" />
+    </form>
+  </section>
 </main>
