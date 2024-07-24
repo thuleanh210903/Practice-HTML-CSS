@@ -199,4 +199,45 @@
       </div>
     </div>
   </section>
+
+  <!-- Feedback -->
+  <section class="container-feedback">
+    <div class="feedback">
+      <h2 class="feedback-title">What people say</h2>
+      <div class="feedback-cards">
+        <include
+          src="./components/feedback-card.html"
+          locals='{
+      "cardClass": "feedback-card_primary",
+      "content": "It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.",
+      "name": "Seneca the Younger",
+      "nameClass": "",
+      "address": "Editor in okodesign.net",
+      "avatar": "../assets/images/desktop/client-1.png",
+      "avatarClass": "feedback-card_avatar--primary"
+    }'
+        >
+        </include>
+
+        <include
+          src="./components/feedback-card.html"
+          locals='{
+      "cardClass": "feedback-card_secondary",
+      "content": "Attending a trade show can be a very effective method of promoting your company and its products.",
+      "name": "Rachel Moreno",
+      "nameClass": "feedback-card_name--secondary",
+      "address": "Lead Designer in okodesign.net",
+      "avatar": "../assets/images/desktop/client-2.png",
+      "avatarClass": "feedback-card_avatar--seconday"
+    }'
+        >
+        </include>
+      </div>
+      <div class="feedback-dots">
+        <div class="feedback-dot feedback-dot_active"></div>
+        <div class="feedback-dot"></div>
+        <div class="feedback-dot"></div>
+      </div>
+    </div>
+  </section>
 </main>
