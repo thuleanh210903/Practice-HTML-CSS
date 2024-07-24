@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ".result-title",
       ".result-cards",
       ".result-desc",
+      ".plans-cards",
+      ".plans_title",
     ];
   
     animatedElements.forEach(function (elementClass) {
