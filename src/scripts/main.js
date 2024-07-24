@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
       ".result-desc",
       ".products-title",
       ".products-desc",
-      ".products-cards"
+      ".products-cards",
+      ".plans-cards",
+      ".plans_title",
     ];
   
     animatedElements.forEach(function (elementClass) {
