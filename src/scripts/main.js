@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     { selector: ".products-cards", animationClass: "slide-up" },
     { selector: ".plans-cards", animationClass: "slide-up" },
     { selector: ".plans_title", animationClass: "slide-up" },
+    { selector: ".title", animationClass: "slide-up" },
+    { selector: ".contact_form", animationClass: "slide-up" },
+    { selector: ".contact_info", animationClass: "slide-up" },
     { selector: ".feedback-title", animationClass: "slide-up" },
     { selector: ".feedback-card_primary", animationClass: "slide-left" },
     { selector: ".feedback-card_secondary", animationClass: "slide-right" },
@@ -20,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (animatedElement) {
       setAnimate(animatedElement, elementInfo.animationClass);
     }
+
   });
 });
 
