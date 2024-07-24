@@ -1,0 +1,58 @@
+@use "../../abstracts/" as *;
+
+.container-feedback {
+  width: 100%;
+}
+
+.feedback {
+  max-width: 1140px;
+  padding: 64px 0 68px;
+  text-align: center;
+  margin: 0 auto;
+
+  &-title {
+    font-size: 44px;
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    }
+  
+
+  @include tablet {
+    max-width: 720px;
+  }
+
+  &-cards {
+    @include flex($align: flex-start, $justify: space-between);
+    padding: 76px 0 108px;
+  }
+
+ 
+  &-dots {
+    @include flex($align: center, $justify: center);
+  }
+
+  &-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid $text-color;
+    cursor: pointer;
+    margin-left: 16px;
+
+    @include tablet {
+      width: 8px;
+      height: 8px;
+    }
+    &_active {
+      background-color: $text-color;
+    }
+  }
+
+}
