@@ -1,0 +1,79 @@
+@use "../../abstracts/" as *;
+
+.start-selling {
+  background-color: $primary-color;
+  padding: 80px 0px 80px;
+  gap: 30px;
+  text-align: center;
+
+  @include flex($direction: column, $align: center);
+
+  @include mobile {
+    gap: unset;
+  }
+
+  &_title {
+    line-height: 48px;
+    font-size: pxToRem(44);
+
+    @include mobile {
+      font-size: pxToRem(20);
+      line-height: 40px;
+    }
+  }
+  &_sub {
+    color: $text-color;
+    max-width: pxToRem(260);
+    padding-bottom: 15px;
+    line-height: 24px;
+    font-size: 16px;
+
+    @include mobile {
+      font-size: 11px;
+    }
+  }
+
+  &_form {
+    @include flex($direction: column);
+    max-width: pxToRem(230);
+    margin: 0 auto;
+  }
+
+  &_input {
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    max-height: pxToRem(45);
+    border: none;
+    padding: 16px 34px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+
+    &::placeholder {
+      color: $text-color;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &_btn {
+    width: 100%;
+    border: none;
+    background-color: $text-color;
+    color: $background-color;
+    padding: 16px 59px;
+    border-radius: 26px;
+
+    font-size: pxToRem(16);
+
+    @include tablet {
+      font-size: 11px;
+    }
+
+    &:hover {
+      background-color: $background-color;
+      color: $text-color;
+    }
+  }
+}
