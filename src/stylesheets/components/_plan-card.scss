@@ -1,0 +1,119 @@
+@use "../abstracts/" as *;
+.plans-card {
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 60px;
+  transition: transform 0.3s ease-in-out;
+
+  @include flex($direction: column, $justify: space-between);
+
+  @include mobile {
+    margin-top: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 254, 254, 0.884),
+      0 6px 6px rgba(143, 142, 142, 0.664);
+  }
+
+  @include flex($direction: column, $justify: space-between);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 254, 254, 0.884), 0 6px 6px rgba(143, 142, 142, 0.664);
+
+  }
+
+  @include flex($direction: column, $justify: space-between);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 254, 254, 0.884),
+      0 6px 6px rgba(143, 142, 142, 0.664);
+  }
+
+  &_top {
+    position: relative;
+    border-radius: inherit;
+  }
+
+  &_img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+
+  figcaption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $background-color;
+    display: block;
+    line-height: 40px;
+
+    @include tablet {
+      line-height: 20px;
+    }
+  }
+
+  &_price {
+    font-size: pxToRem(60);
+    position: relative;
+    padding-top: 10px;
+
+    @include mobile {
+      font-size: pxToRem(32);
+    }
+
+    &::before {
+      position: absolute;
+      content: "$";
+      font-size: 1.5rem;
+      width: 100%;
+      top: 58%;
+      left: 56%;
+      transform: translate(-110%, -50%);
+
+      @include tablet {
+        font-size: 11px;
+      }
+    }
+  }
+
+  &_content {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-top: 13px;
+  }
+}
+
+.btn {
+  max-width: 200px;
+  color: $text-color;
+  margin: 13px auto 32px;
+  padding: 11px 48px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2rem;
+
+  &:hover {
+    border-radius: 2px solid $primary-color;
+    background-color: $primary-color;
+  }
+
+  @include tablet {
+    border: 2px solid $text-color;
+    margin: 10px auto 26px;
+    padding: 0.7rem 1.25rem;
+  }
+
+  @include mobile {
+    padding: 0.4rem 1.25rem;
+  }
+}

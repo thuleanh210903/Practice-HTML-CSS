@@ -1,0 +1,17 @@
+<div class="plans-card">
+  <div class="plans-card_top">
+    <img src="{{planImage}}" alt="plan image" class="plans-card_img" />
+    <figcaption>
+      <p class="plans-card_title">{{planTitle}}</p>
+      <p class="plans-card_price">{{planPrice}}</p>
+    </figcaption>
+  </div>
+
+  <div class="plans-card_content">
+    <each loop="item in {{planDesc}}">
+      <p>{{item}}</p>
+    </each>
+  </div>
+
+  <a href="" class="btn">GET STARTED</a>
+</div>
