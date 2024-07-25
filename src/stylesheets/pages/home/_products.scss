@@ -1,0 +1,55 @@
+@use "../../abstracts/" as *;
+
+.products {
+  width: 100%;
+
+  &-title {
+    padding-bottom: 30px;
+    font-size: pxToRem(44);
+
+    @include tablet {
+      font-size: pxToRem(32);
+    }
+
+    @include mobile {
+      font-size: pxToRem(20);
+    }
+  }
+
+  &-desc {
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 66px;
+
+    @include mobile {
+      width: 90%;
+      padding-bottom: 10px;
+    }
+  }
+
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(262px,1fr));
+    gap:25px;
+
+    @include tablet {
+        grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+  }
+}
+.container-products {
+  padding: 67px 0 76px;
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  @include tablet {
+    padding: 40px 0 48px;
+    max-width: 720px;
+  }
+}
