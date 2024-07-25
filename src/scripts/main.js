@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   var animatedElements = [
     { selector: ".result-title", animationClass: "slide-up" },
     { selector: ".result-cards", animationClass: "slide-up" },
