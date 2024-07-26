@@ -67,7 +67,6 @@
 
   @include flex($direction: row, $justify: space-around);
   @include tablet {
-    width: 100vw;
     padding: 20px;
   }
 

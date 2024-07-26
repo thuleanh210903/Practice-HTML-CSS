@@ -1,7 +1,7 @@
 <main>
   <!-- Stunning result -->
   <section class="result">
-    <h3 class="result-title">Stunning Results</h3>
+    <h3 class="result-title title-primary">Stunning Results</h3>
     <p class="result-desc">
       Just look to the statistics we have generate the past year.
     </p>
@@ -45,10 +45,10 @@
     </div>
   </section>
   <!-- What client saying -->
-  <section class="container container-clients">
-    <div class="clients">
+  <section class="container-clients">
+    <div class="container clients">
       <div class="clients-head">
-        <p class="clients-title">What Clients are saying</p>
+        <p class="clients-title title-primary">What Clients are saying</p>
         <span class="clients-quotation">“</span>
       </div>
 
@@ -57,7 +57,7 @@
           <img
             src="../assets/icons/prev-icon.svg"
             alt="prev"
-            class="img-slider"
+            class="img-slider img-main"
           />
         </div>
 
@@ -73,13 +73,13 @@
           <img
             src="../assets/icons/next-icon.svg"
             alt="next"
-            class="img-slider"
+            class="img-slider img-main"
           />
         </div>
       </div>
 
       <div class="clients-person">
-        <img src="../assets/images/desktop/person.png" class="img-person" />
+        <img src="../assets/images/desktop/person.png" class="img-person img-main" />
         <div class="clients-person_contact">
           <p class="person-name">Ophelia Holland</p>
           <p>@ophelia_holland</p>
@@ -87,9 +87,64 @@
       </div>
     </div>
   </section>
+
+
+    <!-- Products -->
+    <section class="products">
+      <div class="container-products container">
+        <h2 class="products-title title-primary">Recent Products</h2>
+        <p class="products-desc">
+          Having used discount toner cartridges for twenty years, there have been
+          a lot of changes in the toner cartridge market. The market today is
+          approximately a twenty billion dollar business.
+        </p>
+        <div class="products-cards">
+          <include
+            src="./components/product-card.html"
+            locals='{
+              "productImage": "../assets/images/desktop/products-1.png",
+              "productView": "91312",
+              "productTitle":"app maintenance",
+              "productDesc":"Lida Morrison, Nettie Burke"
+                    }'
+          ></include>
+  
+          <include
+            src="./components/product-card.html"
+            locals='{
+              "productImage": "../assets/images/desktop/products-2.png",
+              "productView": "91312",
+              "productTitle":"fta keys",
+              "productDesc":"Ivan Alexander, Steven Soto, Clifford Hammond"
+                            }'
+          ></include>
+  
+          <include
+            src="./components/product-card.html"
+            locals='{
+               "productImage": "../assets/images/desktop/products-3.png",
+               "productView": "91312",
+               "productTitle":"smart watch",
+               "productDesc":"Trevor James, Carl Stevenson"
+            }'
+          ></include>
+          <include
+            src="./components/product-card.html"
+            locals='{
+              "productImage": "../assets/images/desktop/products-4.png",
+              "productView": "91312",
+              "productTitle":"watch apps",
+              "productDesc":"Glen Snyder, Andrew Goodwin, Lida Morrison "
+                                      }'
+          ></include>
+        </div>
+      </div>
+    </section>
+
+
   <!-- Start Selling Instantly -->
   <section class="start-selling">
-    <h2 class="start-selling_title">Start Selling Instantly</h2>
+    <h2 class="start-selling_title title-primary">Start Selling Instantly</h2>
     <p class="start-selling_sub">
       Start Selling With Your Pre-paid account. No deposit needed.
     </p>
@@ -99,61 +154,53 @@
       <input type="submit" class="start-selling_btn" value="REGISTER" />
     </form>
   </section>
-  <!-- Products -->
-  <section class="products">
-    <div class="container-products">
-      <h2 class="products-title">Recent Products</h2>
-      <p class="products-desc">
-        Having used discount toner cartridges for twenty years, there have been
-        a lot of changes in the toner cartridge market. The market today is
-        approximately a twenty billion dollar business.
-      </p>
-      <div class="products-cards">
+
+
+  <!-- Feedback -->
+  <section class="container-feedback">
+    <div class="feedback container">
+      <h2 class="feedback-title title-primary">What people say</h2>
+      <div class="feedback-cards">
         <include
-          src="./components/product-card.html"
+          src="./components/feedback-card.html"
           locals='{
-            "productImage": "../assets/images/desktop/products-1.png",
-            "productView": "91312",
-            "productTitle":"APP MAINTENANCE",
-            "productDesc":"Lida Morrison, Nettie Burke"
-                  }'
-        ></include>
+      "cardClass": "feedback-card_primary",
+      "content": "It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.",
+      "name": "Seneca the Younger",
+      "nameClass": "",
+      "address": "Editor in okodesign.net",
+      "avatar": "../assets/images/desktop/client-1.png",
+      "avatarClass": "feedback-card_avatar--primary"
+    }'
+        >
+        </include>
 
         <include
-          src="./components/product-card.html"
+          src="./components/feedback-card.html"
           locals='{
-            "productImage": "../assets/images/desktop/products-2.png",
-            "productView": "91312",
-            "productTitle":"FTA KEYS",
-            "productDesc":"Ivan Alexander, Steven Soto, Clifford Hammond"
-                          }'
-        ></include>
-
-        <include
-          src="./components/product-card.html"
-          locals='{
-             "productImage": "../assets/images/desktop/products-3.png",
-             "productView": "91312",
-             "productTitle":"SMART WATCH",
-             "productDesc":"Trevor James, Carl Stevenson"
-          }'
-        ></include>
-        <include
-          src="./components/product-card.html"
-          locals='{
-            "productImage": "../assets/images/desktop/products-4.png",
-            "productView": "91312",
-            "productTitle":"WATCH APPS",
-            "productDesc":"Glen Snyder, Andrew Goodwin, Lida Morrison "
-                                    }'
-        ></include>
+      "cardClass": "feedback-card_secondary",
+      "content": "Attending a trade show can be a very effective method of promoting your company and its products.",
+      "name": "Rachel Moreno",
+      "nameClass": "feedback-card_name--secondary",
+      "address": "Lead Designer in okodesign.net",
+      "avatar": "../assets/images/desktop/client-2.png",
+      "avatarClass": "feedback-card_avatar--seconday"
+    }'
+        >
+        </include>
+      </div>
+      <div class="feedback-dots">
+        <div class="feedback-dot feedback-dot_active"></div>
+        <div class="feedback-dot"></div>
+        <div class="feedback-dot"></div>
       </div>
     </div>
   </section>
+
   <!-- Subcribing plans -->
-  <section class="plans-container">
+  <section class="plans-container container">
     <div class="plans">
-      <h2 class="plans_title">Subscribing Plans</h2>
+      <h2 class="plans_title title-primary">Subscribing Plans</h2>
       <div class="plans-cards">
         <include
           src="./components/plans-card.html"
@@ -199,51 +246,10 @@
     </div>
   </section>
 
-  <!-- Feedback -->
-  <section class="container-feedback">
-    <div class="feedback">
-      <h2 class="feedback-title">What people say</h2>
-      <div class="feedback-cards">
-        <include
-          src="./components/feedback-card.html"
-          locals='{
-      "cardClass": "feedback-card_primary",
-      "content": "It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.",
-      "name": "Seneca the Younger",
-      "nameClass": "",
-      "address": "Editor in okodesign.net",
-      "avatar": "../assets/images/desktop/client-1.png",
-      "avatarClass": "feedback-card_avatar--primary"
-    }'
-        >
-        </include>
-
-        <include
-          src="./components/feedback-card.html"
-          locals='{
-      "cardClass": "feedback-card_secondary",
-      "content": "Attending a trade show can be a very effective method of promoting your company and its products.",
-      "name": "Rachel Moreno",
-      "nameClass": "feedback-card_name--secondary",
-      "address": "Lead Designer in okodesign.net",
-      "avatar": "../assets/images/desktop/client-2.png",
-      "avatarClass": "feedback-card_avatar--seconday"
-    }'
-        >
-        </include>
-      </div>
-      <div class="feedback-dots">
-        <div class="feedback-dot feedback-dot_active"></div>
-        <div class="feedback-dot"></div>
-        <div class="feedback-dot"></div>
-      </div>
-    </div>
-  </section>
-
   <!-- Get In touch -->
   <section class="contact">
     <div class="container-contact">
-      <h2 class="title">Get in Touch</h2>
+      <h2 class="title title-primary">Get in Touch</h2>
       <form action="#" class="contact_form">
         <input
           type="text"
@@ -297,4 +303,6 @@
       </div>
     </div>
   </section>
+
+  
 </main>
