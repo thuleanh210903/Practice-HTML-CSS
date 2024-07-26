@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.title {
+  &-primary {
+    font-size: pxToRem(44);
+    line-height: pxToRem(48);
+
+    @include tablet {
+      font-size: pxToRem(32);
+      line-height: pxToRem(40);
+    }
+
+    @include mobile {
+      font-size: pxToRem(20);
+    }
+  }
+
+  &-secondary {
+    font-size: pxToRem(18);
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: pxToRem(12);
+    }
+  }
+}
+
+.link {
+  &:hover {
+    color: $primary-color;
+  }
+}

@@ -92,19 +92,14 @@
 }
 
 .title {
-  font-size: pxToRem(44);
-  line-height: pxToRem(48);
-  padding-bottom: 22px;
+  padding-bottom: pxToRem(22);
 
   @include tablet {
-    font-size: pxToRem(32);
-    line-height: pxToRem(40);
-    padding-bottom: 10px;
+    padding-bottom: pxToRem(10);
   }
 
   @include mobile {
-    font-size: pxToRem(31);
-    padding-bottom: 7px;
+    padding-bottom: pxToRem(7);
   }
 }
 
