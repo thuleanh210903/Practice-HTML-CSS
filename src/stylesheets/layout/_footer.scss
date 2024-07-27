@@ -53,9 +53,11 @@
   &_bottom {
     width: 100%;
     padding-top: 20px;
+    
     @include flex($align: center, $justify: space-between);
     @include mobile {
       flex-direction: column;
+      text-align: center;
     }
 
     &_social {

@@ -8,27 +8,23 @@
     border: none;
     width: 100%;
     font-family: $primary-font;
+
+    @include mobile {
+      font-size: 10px;
+    }
   }
   .form-checkbox {
     display: block;
     position: relative;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     &_checkmark {
       position: absolute;
       top: 0;
-      left: calc(50% - pxToRem(110));
+      left: 10%;
       height: 18px;
       width: 18px;
       border-radius: 3px;
       background-color: $background-color;
-  
-      @include tablet {
-        left: calc(50% - 4.875rem);
-      }
     }
   }
   .form-checkbox input {
